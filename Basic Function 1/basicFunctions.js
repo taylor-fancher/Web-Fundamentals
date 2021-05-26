@@ -3,7 +3,7 @@
 // }
 // console.log(a())
 
-//Prediciton: No output, function is not called.
+//Prediction: No output, function is not called.
 //Output: 35
 
 //function a(){
@@ -11,7 +11,7 @@
 //}
 //console.log(a()+a());
 
-//Prediciton: 8
+//Prediction: 8
 //Output: 8
 
 // function a(b){
@@ -19,7 +19,7 @@
 // }
 // console.log(a(2)+a(4));
 
-//Prediciton: 6
+//Prediction: 6
 //Output: 6
 
 // function a(b){
@@ -28,7 +28,7 @@
 //     }
 //     console.log(a(3));
 
-//Prediciton: 3, 9
+//Prediction: 3, 9
 //Output: 3, 9
 
 // function a(b){
@@ -37,7 +37,7 @@
 // }
 // console.log(a(10));
 
-//Prediciton: 40, 10
+//Prediction: 40, 10
 //Output: 40
 
 // function a(b){
@@ -51,7 +51,7 @@
 // }
 // console.log(a(15));
 
-//Prediciton: 4
+//Prediction: 4
 //Output: 4
 
 // function a(b,c){
@@ -60,17 +60,97 @@
 // console.log(10,3);
 // console.log( a(3,10) );
 
-//Prediciton: 30
+//Prediction: 30
 //Output: 10, 3, 30
 
-function a(b){
-    for(var i=0; i<10; i++){
-        console.log(i);
-    }
-    return i;
+// function a(b){
+//     for(var i=0; i<10; i++){
+//         console.log(i);
+//     }
+//     return i;
+// }
+// console.log(3);
+// console.log(4);
+
+//Prediciton: 3, 4
+//Output: 3, 4
+
+// function a(){
+//     for(var i=0; i<10; i++){
+//         i = i +2;
+//         console.log(i);
+//     }
+// }
+// a();
+
+//Prediction: 2, 5, 8
+//Output: 2, 5, 8, 11
+
+// function a(b,c){
+//     for(var i=b; i<c; i++) {
+//         console.log(i);
+//     }
+//     return b*c;
+// }
+// a(0,10);
+// console.log(a(0,10));
+
+//Prediciton: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 
+//Output: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
+
+// function a(){
+//     for(var i=0; i<10; i++){
+//         for(var j=0; j<10; j++){
+//             console.log(j);
+//         }
+//         console.log(i);
+//     }
+// }
+
+//Prediction: No output, function is not called.
+//Output: No output.
+
+// function a(){
+//     for(var i=0; i<10; i++){
+//         for(var j=0; j<10; j++){
+//             console.log(i,j);
+//         }
+//         console.log(j,i);
+//     }
+// }
+
+//Prediction: No output, function is not called.
+//Output: No output.
+
+// var z = 10;
+// function a(){
+//     var z = 15;
+//     console.log(z);
+// }
+// console.log(z);
+
+//Prediction: 10
+//Output: 10
+
+// var z = 10;
+// function a(){
+//     var z = 15;
+//     console.log(z);
+// }
+// a();
+// console.log(z);
+
+//Prediction: 15
+//Output: 15, 10
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+    return z;
 }
-console.log(3);
-console.log(4);
+z = a();
+console.log(z);
 
-//Prediciton: 30
-//Output: 10, 3, 30
+//Prediction: 15
+//Output: 15, 15
