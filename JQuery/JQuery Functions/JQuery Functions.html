@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel='stylesheet' type='text/css' src='JQuery.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button.hide').click(function(){
+                $('p.target').hide()
+            })
+            $('button.show').click(function(){
+                $('p.target').show()
+            })
+            $('button.toggle').click(function(){
+                $('p.toggle').toggle()
+            })
+            $('button.slideUp').click(function(){
+                $('p.slideTarget').slideUp()
+            })
+            $('button.slideDown').click(function(){
+                $('p.slideTarget').slideDown()
+            })
+            $('button.slideToggle').click(function(){
+                $('p.slideToggle').slideToggle()
+            })
+            $('button.fadeOut').click(function(){
+                $('p.fadeTarget').fadeOut()
+            })
+            $('button.fadeIn').click(function(){
+                $('p.fadeTarget').fadeIn()
+            })
+            $('button.addClass').click(function(){
+                $('#cyan').addClass('cyan')
+            })
+            $('button.before').click(function(){
+                $('p.before').before('<p>Hello World!</p>')
+            })
+            $('button.after').click(function(){
+                $('p.after').after('<p>Hello World!</p>')
+            })
+            $('button.append').click(function(){
+                $('p.append').append('paragraph')
+            })
+            $('button.html').click(function(){
+                $('p.html').html('Hello World!')
+            })
+            $('button.attr').click(function(){
+                $('img').attr('alt', 'Image not found')
+            })
+            $('button.val').click(function(){
+                $('input.val').val('Value Added!')
+            })
+            $('button.text').click(function(){
+                $('p.text').text('Assignment Completed!')
+            })
+        })
+    </script>
+    <style>
+        .cyan {
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>.hide</h1>
+    <p class="target">Click the button to hide this paragraph</p>
+    <button class="hide">Hide</button>
+    <h1>.show</h1>
+    <p>Click the button to reveal the above paragraph</p>
+    <button class='show'>Show</button>
+    <h1>.toggle</h1>
+    <p class='toggle'>Click the button to hide and reveal this paragraph</p>
+    <button class='toggle'>Toggle</button>
+    <h1>.slideUp</h1>
+    <p class='slideTarget'>Click the button to hide this paragraph with a sliding motion</p>
+    <button class='slideUp'>Slide Up</button>
+    <h1>.slideDown</h1>
+    <p>Click the button to reveal the above paragraph with a sliding motion</p>
+    <button class='slideDown'>Slide Down</button>
+    <h1>.slideToggle</h1>
+    <p class='slideToggle'>Click the button to hide and reveal this paragraph with a sliding motion</p>
+    <button class='slideToggle'>Toggle</button>
+    <h1>.fadeOut</h1>
+    <p class='fadeTarget'>Click the button to hide this paragraph with a fade transition</p>
+    <button class="fadeOut">Fade Out</button>
+    <h1>.fadeIn</h1>
+    <p>Click the button to reveal the above paragraph with a fade transition</p>
+    <button class="fadeIn">Fade In</button>
+    <h1>.addClass</h1>
+    <p id='cyan'>Click the button to add the class 'cyan' to this paragraph</p>
+    <button class='addClass'>Add Class</button>
+    <h1>.before</h1>
+    <p class='before'>Click the button to add 'Hello World!' before this paragraph</p>
+    <button class='before'>Add Before</button>
+    <h1>.after</h1>
+    <p class='after'>Click the button to add 'Hello World!' after this paragraph</p>
+    <button class='after'>Add After</button>
+    <h1>.append</h1>
+    <p class='append'>Click the button to finish this </p>
+    <button class='append'>Append</button>
+    <h1>.html</h1>
+    <p class='html'>Click the button to replace this paragraph with 'Hello World!'</p>
+    <button class='html'>Add HTML</button>
+    <h1>.attr</h1>
+    <img src=''>
+    <p>Click the button to add an 'alt' to the above image</p>
+    <button class='attr'>Change the Attribute</button>
+    <h1>.val</h1>
+    <input type='text' class='val'>
+    <p class='val'>Click the button to add a value to this text box</p>
+    <button class='val'>Change the Value</button>
+    <h1>.text</h1>
+    <p class='text'>Click the button to change this paragraph</p>
+    <button class='text'>Change Text</button>
