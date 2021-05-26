@@ -1,0 +1,14 @@
+.center-box {
+    background-color: navy;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-item {
+    background-color: blanchedalmond;
+    width: 50px;
+    height: 50px;
+}

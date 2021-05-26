@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #407d61;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#wrapper {
+    width: 800px;
+    background-color: #6f5964;
+}
+
+#header {
+    width: 800px;
+    background-color: white;
+    padding: 1em;
+    text-align: left;
+    display: flex;
+}
+#header h2 {
+    text-align: flex-end;
+}
+
+#profile {
+    width: 300px;
+    height: 188px;
+    margin: 20px 10px 10px 20px;
+    border: 5px solid silver;
+}
+
+#intro {
+    width: 420px;
+    background-color: white;
+    vertical-align: top;
+    display: inline-block;
+    margin: 20px 20px 10px 10px;
+}
+#intro h3{
+    display: block;
+    background-color: silver;
+    color: white;
+    padding: 7px;
+}
+#intro p {
+    margin: 10px;
+    font-size: 13px;
+}
+
+.project {
+    display: inline-block;
+    width: 240px;
+    margin: 10px;
+    vertical-align: top;
+    background-color: white;
+    font-size: 13px;
+    text-align: justify;
+}
+.site {
+    width: 240px;
+    height: 120px;
+}
+.project h3, h4 {
+    background-color: silver;
+    color: white;
+    padding: 7px;
+}
+.project p{
+    padding: 5px;
+    height: 140px;
+}
+.language {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    display: inline-block;
+}
+
+#footer {
+    background-color: white;
+    text-align:center;
+}
+#footer img {
+    width: 15px;
+    height: 15px;
+}
+#footer a {
+    color: black;
+    font-style: italic;
+}

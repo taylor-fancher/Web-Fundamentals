@@ -1,0 +1,1 @@
+console.log(users.name + "-" + users.age)
